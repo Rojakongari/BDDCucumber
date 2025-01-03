@@ -55,6 +55,8 @@ public class LoginSteps_PF {
 		login = new LoginPage_PF(driver);
 		login.clickLogin();
 		//driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
+	
+	
 		System.out.println("Inside step - user clicks on login button");
 		Thread.sleep(2000);
 	}
@@ -63,6 +65,7 @@ public class LoginSteps_PF {
 	public void user_navigated_to_homepage() {
 		login = new LoginPage_PF(driver);
 		login.homepageIsDisplayed();
+		
 	
 		System.out.println("Inside step - user is on home page");
 		//driver.close();
